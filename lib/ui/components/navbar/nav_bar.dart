@@ -18,7 +18,7 @@ PreferredSizeWidget? navBar() {
           ),
           IconButton(
             icon: const Icon(
-              Icons.search,
+              Icons.people,
               color: SystemColors.black,
             ),
             onPressed: () {},

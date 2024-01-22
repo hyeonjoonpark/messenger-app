@@ -18,7 +18,7 @@ class _OnboardScreenState extends State<OnboardScreen> {
             child: Column(
               children: <Widget>[
                 SizedBox(
-                  height: 100.h,
+                  height: 0.5.sh,
                 ),
                 ElevatedButton(
                   onPressed: () {
@@ -29,8 +29,8 @@ class _OnboardScreenState extends State<OnboardScreen> {
                     backgroundColor: MaterialStateProperty.all<Color>(
                       Colors.yellow,
                     ),
-                    maximumSize: MaterialStateProperty.all(const Size(180, 40)),
-                    minimumSize: MaterialStateProperty.all(const Size(180, 40)),
+                    maximumSize: MaterialStateProperty.all(const Size(250, 50)),
+                    minimumSize: MaterialStateProperty.all(const Size(250, 50)),
                     shape: MaterialStateProperty.all<RoundedRectangleBorder>(
                       RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(15.r),
