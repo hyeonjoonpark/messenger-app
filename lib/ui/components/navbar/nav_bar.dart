@@ -24,7 +24,9 @@ PreferredSizeWidget? navBar() {
               Icons.search,
               color: SystemColors.black,
             ),
-            onPressed: () {},
+            onPressed: () {
+              Get.toNamed("/user/search");
+            },
           ),
           IconButton(
             icon: const Icon(
