@@ -34,7 +34,9 @@ PreferredSizeWidget? navBar() {
               Icons.chat,
               color: SystemColors.black,
             ),
-            onPressed: () {},
+            onPressed: () {
+              Get.toNamed("/user/chat");
+            },
           ),
         ],
       ),
