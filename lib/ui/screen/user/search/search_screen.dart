@@ -38,33 +38,31 @@ class _SearchScreenState extends State<SearchScreen> {
   @override
   Widget build(BuildContext context) {
     return ScreenUtilInit(
-      builder: (BuildContext context, child) => MaterialApp(
-        home: Scaffold(
-          appBar: navBar(),
-          body: Column(
-            children: [
-              TextField(
-                decoration: const InputDecoration(
-                  hintText: '사용자 이름을 검색하세요',
-                  prefixIcon: Icon(Icons.search),
-                  border: OutlineInputBorder(),
-                ),
-                onChanged: (value) {
-                  filterNames(value);
+      builder: (BuildContext context, child) => Scaffold(
+        appBar: navBar(),
+        body: Column(
+          children: [
+            TextField(
+              decoration: const InputDecoration(
+                hintText: '사용자 이름을 검색하세요',
+                prefixIcon: Icon(Icons.search),
+                border: OutlineInputBorder(),
+              ),
+              onChanged: (value) {
+                filterNames(value);
+              },
+            ),
+            Expanded(
+              child: ListView.builder(
+                itemCount: filteredList.length,
+                itemBuilder: (context, index) {
+                  return ListTile(
+                    title: Text(filteredList[index]),
+                  );
                 },
               ),
-              Expanded(
-                child: ListView.builder(
-                  itemCount: filteredList.length,
-                  itemBuilder: (context, index) {
-                    return ListTile(
-                      title: Text(filteredList[index]),
-                    );
-                  },
-                ),
-              ),
-            ],
-          ),
+            ),
+          ],
         ),
       ),
     );

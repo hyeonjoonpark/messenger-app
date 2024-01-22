@@ -8,7 +8,7 @@ PreferredSizeWidget? navBar() {
     child: AppBar(
       backgroundColor: SystemColors.white,
       title: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceAround,
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           IconButton(
             icon: const Icon(
