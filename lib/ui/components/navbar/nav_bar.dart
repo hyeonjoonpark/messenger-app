@@ -6,6 +6,7 @@ PreferredSizeWidget? navBar() {
   return PreferredSize(
     preferredSize: const Size.fromHeight(kToolbarHeight),
     child: AppBar(
+      automaticallyImplyLeading: false,
       backgroundColor: SystemColors.white,
       title: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
