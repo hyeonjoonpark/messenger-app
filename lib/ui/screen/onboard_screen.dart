@@ -4,6 +4,8 @@ import 'package:get/get.dart';
 import 'package:messenger/utils/theme/colors/system_colors.dart';
 
 class OnboardScreen extends StatefulWidget {
+  const OnboardScreen({super.key});
+
   @override
   _OnboardScreenState createState() => _OnboardScreenState();
 }

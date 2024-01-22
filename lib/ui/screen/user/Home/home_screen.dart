@@ -5,7 +5,7 @@ import 'package:messenger/ui/components/profile/profile.dart';
 import 'package:messenger/utils/theme/colors/system_colors.dart';
 
 class HomeScreen extends StatefulWidget {
-  const HomeScreen({Key? key}) : super(key: key);
+  const HomeScreen({super.key});
 
   @override
   _MyHomePageState createState() => _MyHomePageState();
@@ -52,7 +52,7 @@ class _MyHomePageState extends State<HomeScreen> {
                     height: 0.03.sh,
                   ),
                   GridView.count(
-                    physics: NeverScrollableScrollPhysics(),
+                    physics: const NeverScrollableScrollPhysics(),
                     crossAxisCount: 3,
                     shrinkWrap: true,
                     children: [
@@ -63,7 +63,7 @@ class _MyHomePageState extends State<HomeScreen> {
                             print("${i + 1}" + "번째 사진");
                           },
                           child: Container(
-                            margin: EdgeInsets.all(10),
+                            margin: const EdgeInsets.all(10),
                             decoration: BoxDecoration(
                               color: Colors.white,
                               border: Border.all(
