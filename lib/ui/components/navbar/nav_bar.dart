@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:messenger/utils/theme/colors/system_colors.dart';
 
 PreferredSizeWidget? navBar() {
@@ -14,11 +15,13 @@ PreferredSizeWidget? navBar() {
               Icons.people,
               color: SystemColors.black,
             ),
-            onPressed: () {},
+            onPressed: () {
+              Get.toNamed("/user/home");
+            },
           ),
           IconButton(
             icon: const Icon(
-              Icons.people,
+              Icons.search,
               color: SystemColors.black,
             ),
             onPressed: () {},
