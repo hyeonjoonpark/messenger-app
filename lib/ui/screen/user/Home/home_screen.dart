@@ -49,7 +49,32 @@ class _MyHomePageState extends State<HomeScreen> {
                     ],
                   ),
                   SizedBox(
-                    height: 0.03.sh,
+                    height: 0.01.sh,
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      const Text(
+                        "100\n팔로워",
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                          fontSize: 16,
+                        ),
+                      ),
+                      SizedBox(
+                        width: 0.05.sw,
+                      ),
+                      const Text(
+                        "100\n팔로잉",
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                          fontSize: 16,
+                        ),
+                      ),
+                    ],
+                  ),
+                  SizedBox(
+                    height: 0.02.sh,
                   ),
                   GridView.count(
                     physics: const NeverScrollableScrollPhysics(),
