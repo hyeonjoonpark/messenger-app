@@ -63,7 +63,7 @@ class _MyHomePageState extends State<HomeScreen> {
                             print("${i + 1}" + "번째 사진");
                           },
                           child: Container(
-                            margin: const EdgeInsets.all(10),
+                            margin: const EdgeInsets.all(0.5),
                             decoration: BoxDecoration(
                               color: Colors.white,
                               border: Border.all(
