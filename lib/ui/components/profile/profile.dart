@@ -20,7 +20,7 @@ Widget profile(BuildContext context) {
                 color: Colors.transparent,
               ),
             ),
-          )
+          ),
         ],
       ),
     ),

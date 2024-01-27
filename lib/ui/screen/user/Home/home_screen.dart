@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:get/get.dart';
 import 'package:messenger/ui/components/navbar/nav_bar.dart';
 import 'package:messenger/ui/components/profile/profile.dart';
 import 'package:messenger/utils/theme/colors/system_colors.dart';
@@ -15,7 +16,7 @@ class _MyHomePageState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return ScreenUtilInit(
-      builder: (BuildContext context, Widget? child) => Scaffold(
+      builder: (context, Widget? child) => Scaffold(
         appBar: navBar(),
         body: SingleChildScrollView(
           child: Center(
@@ -43,7 +44,9 @@ class _MyHomePageState extends State<HomeScreen> {
                         color: SystemColors.black,
                         size: 30,
                       ),
-                      onPressed: () {},
+                      onPressed: () {
+                        Get.toNamed("/user/info-change");
+                      },
                     ),
                   ],
                 ),

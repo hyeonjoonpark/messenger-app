@@ -14,7 +14,7 @@ class _OnboardScreenState extends State<OnboardScreen> {
   @override
   Widget build(BuildContext context) {
     return ScreenUtilInit(
-      builder: (BuildContext context, child) => Scaffold(
+      builder: (context, child) => Scaffold(
         body: Center(
           child: Column(
             children: <Widget>[
